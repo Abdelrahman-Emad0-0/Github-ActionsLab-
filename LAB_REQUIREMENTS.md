@@ -125,7 +125,4 @@ Your CI workflow should:
 1. Run on `push` and `pull_request`
 2. Set up Python
 3. Install dependencies
-4. Run at least:
-   - formatting check
-   - lint
-   - tests
+4. Run make pipeline

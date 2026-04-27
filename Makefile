@@ -7,11 +7,13 @@
 
 .PHONY: help setup test lint clean
 
-help:
-	@echo "TODO: Add help messages for each Make target."
-
 setup:
 	@echo "TODO: Install dependencies."
+
+pipeline:  # run the entire pipeline 
+# example
+reports/validation_raw.json: data/raw/Teen_Mental_Health_Dataset.csv src/data/validate.py $(CONFIG)
+	$(PYTHON) src/data/validate.py --config $(CONFIG) --input data/raw/Teen_Mental_Health_Dataset.csv --output reports/validation_raw.json
 
 test:
 	@echo "TODO: Run tests."
