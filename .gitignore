@@ -33,7 +33,7 @@ htmlcov/
 
 # Generated pipeline artifacts
 data/processed/
-models/
+/models/
 reports/
 
 # Environment
