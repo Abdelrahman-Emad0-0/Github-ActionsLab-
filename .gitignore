@@ -34,7 +34,7 @@ htmlcov/
 # Generated pipeline artifacts
 data/processed/
 /models/
-reports/
+/reports/
 
 # Environment
 .env
