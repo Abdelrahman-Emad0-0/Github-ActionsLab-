@@ -7,7 +7,7 @@
 
 #C:/venvs/bigdata/Scripts/python.exe
 
-PYTHON = python
+PYTHON = python3
 CONFIG = configs/config.toml
 
 .PHONY: help setup validate clean_data features train classify report pipeline test format check lint isort clean
