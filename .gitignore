@@ -30,3 +30,11 @@ htmlcov/
 # IDE/editor
 .vscode/
 .idea/
+
+# Generated pipeline artifacts
+data/processed/
+models/
+reports/
+
+# Environment
+.env

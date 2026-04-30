@@ -6,5 +6,34 @@ build-backend = "setuptools.build_meta"
 name = "student_lab_template"
 version = "0.1.0"
 description = "TODO: Add project description"
+requires-python = ">=3.10"
+dependencies = [
+    "pandas",
+    "scikit-learn",
+    "pydantic>=2.0",
+    "toml",
+    "python-dotenv",
+]
 
 # TODO: Add dependencies and optional tool configs (pytest, black, flake8, etc.)
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "black",
+    "ruff",
+    "isort",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
+
+[tool.black]
+line-length = 100
+
+[tool.ruff]
+line-length = 100
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
